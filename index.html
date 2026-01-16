@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Alexis Meunier — CV / Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#0b1220;
+  color:#eaf0ff;
+  line-height:1.6;
+}
+
+/* ===== HEADER ===== */
+header{
+  background:#101a33;
+  padding:20px;
+  text-align:center;
+  border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.header-content{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.photo-profil{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid #6ea8fe;
+}
+
+header h1{ margin:0; font-size:28px; }
+header p{ margin:6px 0 0; color:#aeb7cf; }
+
+nav{ margin-top:15px; }
+nav a{
+  color:#6ea8fe;
+  margin:0 10px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* ===== MAIN ===== */
+main{
+  max-width:900px;
+  margin:auto;
+  padding:30px 20px;
+}
+
+section{ margin-bottom:40px; }
+
+h2{
+  border-bottom:2px solid #6ea8fe;
+  padding-bottom:5px;
+  margin-bottom:20px;
+  font-size:22px;
+}
+
+.card{
+  background:#101a33;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* ===== EXPERIENCE / FORMATION ===== */
+.item{ margin-bottom:30px; }
+
+.item-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.item-title h3{
+  margin:0;
+  font-size:18px;
+}
+
+.item-title p{
+  margin:5px 0;
+  color:#aeb7cf;
+  font-size:14px;
+}
+
+.logo{
+  max-height:70px;
+  max-width:180px;
+  object-fit:contain;
+}
+
+ul{ margin-top:12px; }
+li{ margin-bottom:6px; }
+
+.skills span{
+  display:inline-block;
+  background:rgba(110,168,254,0.15);
+  border:1px solid rgba(110,168,254,0.3);
+  padding:8px 12px;
+  margin:6px;
+  border-radius:20px;
+  font-size:14px;
+}
+
+.contact p{
+  font-size:16px;
+  margin:10px 0;
+}
+
+.contact a{
+  color:#6ea8fe;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  border-top:1px solid rgba(255,255,255,0.1);
+  color:#aeb7cf;
+  font-size:14px;
+}
+
+@media(max-width:700px){
+  .item-header{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-content">
+    <img src="photo_profil.jfif" alt="Photo de profil Alexis Meunier" class="photo-profil">
+    <div>
+      <h1>Alexis Meunier</h1>
+      <p>Étudiant BUT GEII — Apprenti électrotechnicien</p>
+    </div>
+  </div>
+
+  <nav>
+    <a href="#apropos">À propos</a>
+    <a href="#experience">Expérience</a>
+    <a href="#formation">Formation</a>
+    <a href="#competences">Compétences</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="apropos">
+  <h2>À propos</h2>
+  <div class="card">
+    <p>
+      Étudiant en <strong>Génie Électrique et Informatique Industrielle (GEII)</strong>,
+      actuellement en alternance en tant qu’<strong>apprenti électrotechnicien</strong>.
+    </p>
+    <p>
+      Intéressé par l’installation électrique, l’automatisation industrielle
+      et la maintenance de systèmes électriques.
+    </p>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Expérience</h2>
+  <div class="card">
+
+    <div class="item">
+      <div class="item-header">
+        <div class="item-title">
+          <h3>Apprenti Électrotechnicien — MARECHALLE PESAGE</h3>
+          <p>Septembre 2024 – Aujourd’hui • Chauny</p>
+        </div>
+        <img src="Logo_Marechalle.png" class="logo" alt="Logo Marechalle Pesage">
+      </div>
+      <ul>
+        <li>Installation et maintenance de systèmes électriques industriels</li>
+        <li>Lecture et compréhension de schémas électriques</li>
+        <li>Dépannage et interventions techniques</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <div class="item-title">
+          <h3>Opérateur Machine — Bonduelle</h3>
+          <p>Juillet 2024 – Août 2024 • Estrées-Mons</p>
+        </div>
+        <img src="Logo_Bonduelle.png" class="logo" alt="Logo Groupe Bonduelle">
+      </div>
+      <ul>
+        <li>Utilisation de machines de production</li>
+        <li>Respect des consignes de sécurité</li>
+        <li>Travail en environnement industriel</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section id="formation">
+  <h2>Formation</h2>
+  <div class="card">
+    <div class="item-header">
+      <div class="item-title">
+        <h3>BUT Génie Électrique et Informatique Industrielle (GEII)</h3>
+        <p>Université de Picardie Jules Verne — 2023 / 2026</p>
+      </div>
+      <img src="Logo_UPJV.png" class="logo" alt="Logo UPJV">
+    </div>
+
+    <ul>
+      <li>Électricité et électrotechnique</li>
+      <li>Automatisme industriel</li>
+      <li>Informatique industrielle</li>
+      <li>Électronique</li>
+    </ul>
+  </div>
+</section>
+
+<section id="competences">
+  <h2>Compétences</h2>
+  <div class="card skills">
+    <span>Génie électrique</span>
+    <span>Installation électrique</span>
+    <span>Schémas électriques</span>
+    <span>Dépannage électrique</span>
+    <span>Automatisation industrielle</span>
+    <span>Conception de systèmes</span>
+    <span>Systèmes de contrôle</span>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card contact">
+    <p>📧 Email :
+      <a href="mailto:alexis.meunier@yahoo.com">alexis.meunier@yahoo.com</a>
+    </p>
+    <p>📞 Téléphone :
+      <a href="tel:+33767264016">07 67 26 40 16</a>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  © <span id="year"></span> Alexis Meunier
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
