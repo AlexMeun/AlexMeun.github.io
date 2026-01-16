@@ -124,6 +124,23 @@ li{ margin-bottom:6px; }
   font-weight:bold;
 }
 
+/* ===== BOUTON CV ===== */
+.cv-link{
+  display:inline-block;
+  margin-top:15px;
+  padding:10px 18px;
+  background:#6ea8fe;
+  color:#0b1220;
+  border-radius:25px;
+  font-weight:bold;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.cv-link:hover{
+  background:#8bb9ff;
+}
+
 footer{
   text-align:center;
   padding:20px;
@@ -174,6 +191,9 @@ footer{
       Intéressé par l’installation électrique, l’automatisation industrielle
       et la maintenance de systèmes électriques.
     </p>
+    <a href="cv_alexis_meunier.pdf" target="_blank" class="cv-link">
+      📄 Télécharger mon CV
+    </a>
   </div>
 </section>
 
@@ -251,7 +271,7 @@ footer{
   <h2>Contact</h2>
   <div class="card contact">
     <p>📧 Email :
-      <a href="mailto:alexis.meunier80@yahoo.fr">alexis.meunier80@yahoo.fr</a>
+      <a href="mailto:alexismeunier@yahoo.fr">alexismeunier@yahoo.fr</a>
     </p>
     <p>📞 Téléphone :
       <a href="tel:+33767264020">07 67 26 40 20</a>
@@ -271,4 +291,3 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 </body>
 </html>
-
